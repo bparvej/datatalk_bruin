@@ -1,5 +1,37 @@
+# Bruin configuration
 .bruin.yml
-logs/runs
-logs/*.log
+
+# Logs and runs
+logs/
+*.log
+
+# Database files
+*.duckdb
+*.duckdb.wal
+.dlt/
+
+# Python
 __pycache__/
 *.py[cod]
+*.egg-info/
+venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Data files (parquet, csv used as cache)
+*.parquet
+*.parquet.bak
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
